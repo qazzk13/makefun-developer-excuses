@@ -3,9 +3,10 @@ import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 // The excuse: he needed disk space for the backup, so he freed some up
-// by removing the thing the backup was supposed to be of.
+// by removing the thing the backup was supposed to be of. The backup,
+// it turns out, never happened either.
 const line =
-  "Prod's down, sorry, I deleted the database to make room for the database backup, and yes, before you say it, I have also spotted the flaw in that plan.";
+  "Site's down and it's on me, I wiped the database to make space for the database backup, and no, before anyone asks, the backup did not get made either.";
 
 if (line.length < 1 || line.length > 200) {
   throw new Error(`entry line must be 1-200 characters, got ${line.length}`);
